@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pawan Mishra | Advocate | Kushinagar</title>
+
+<meta name="description" content="Pawan Mishra - Advocate, District & Sessions Court, Kushinagar. Book appointment and contact for legal consultation.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f7f5ef;
+    color:#182235;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#0d1626;
+    color:white;
+    box-shadow:0 4px 20px rgba(0,0,0,.18);
+}
+
+.navbar{
+    height:72px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#d4af37;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    font-size:14px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#d4af37;
+}
+
+.menu{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    color:white;
+    background:
+    linear-gradient(rgba(7,14,27,.91),rgba(7,14,27,.91)),
+    radial-gradient(circle at 70% 40%,#334155,#080f1c);
+}
+
+.hero-content{
+    max-width:760px;
+    padding:70px 0;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:8px 17px;
+    border:1px solid #d4af37;
+    border-radius:30px;
+    color:#e5c65a;
+    font-size:13px;
+    letter-spacing:1px;
+    margin-bottom:22px;
+}
+
+.hero h1{
+    font-size:clamp(45px,8vw,78px);
+    line-height:1;
+    margin-bottom:22px;
+}
+
+.hero h1 span{
+    color:#d4af37;
+}
+
+.hero p{
+    max-width:650px;
+    color:#d9e0ea;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 23px;
+    border-radius:7px;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.gold{
+    background:#d4af37;
+    color:#101827;
+}
+
+.white{
+    background:white;
+    color:#101827;
+}
+
+/* SECTION */
+
+section{
+    padding:80px 0;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.title small{
+    color:#a27d19;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-weight:bold;
+}
+
+.title h2{
+    font-size:38px;
+    margin-top:7px;
+}
+
+.title p{
+    max-width:650px;
+    margin:10px auto;
+    color:#687385;
+}
+
+/* ABOUT */
+
+.about{
+    background:#f7f5ef;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+/* ADVOCATE BOARD */
+
+.advocate-board{
+    max-width:500px;
+    margin:auto;
+    background:#101827;
+    border:2px solid #d4af37;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.22);
+    color:white;
+    text-align:center;
+}
+
+.board-header{
+    background:#d4af37;
+    color:#111827;
+    padding:13px 20px;
+    display:flex;
+    justify-content:space-between;
+    font-weight:900;
+    letter-spacing:3px;
+}
+
+.photo-area{
+    height:410px;
+    background:
+    radial-gradient(circle,#374151,#101827);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.no-photo{
+    width:90%;
+    height:100%;
+    border:2px dashed #d4af37;
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:#d4af37;
+    background:rgba(255,255,255,.025);
+}
+
+.no-photo .camera{
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+.no-photo strong{
+    font-size:21px;
+    letter-spacing:2px;
+}
+
+.no-photo small{
+    color:#bfc6d1;
+    margin-top:7px;
+}
+
+.advocate-photo{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+    display:none;
+}
+
+.board-info{
+    padding:23px 15px;
+}
+
+.board-info h2{
+    color:#d4af37;
+    font-size:34px;
+    margin-bottom:2px;
+}
+
+.profession{
+    font-size:15px;
+    font-weight:bold;
+    letter-spacing:4px;
+}
+
+.court{
+    margin-top:7px;
+    color:#e5e7eb;
+}
+
+.location{
+    margin-top:5px;
+    color:#c7ced9;
+    font-size:14px;
+}
+
+.board-footer{
+    background:#d4af37;
+    color:#111827;
+    padding:11px;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+/* ABOUT TEXT */
+
+.about-text h3{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.about-text p{
+    color:#687385;
+    margin-bottom:15px;
+}
+
+.info{
+    list-style:none;
+    margin-top:20px;
+}
+
+.info li{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+
+/* SERVICES */
+
+.services{
+    background:white;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    padding:28px 24px;
+    background:#f8f7f3;
+    border:1px solid #e5e1d7;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.card-icon{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.card h3{
+    margin-bottom:7px;
+}
+
+.card p{
+    color:#687385;
+    font-size:14px;
+}
+
+/* APPOINTMENT */
+
+.appointment{
+    background:#101827;
+    color:white;
+}
+
+.appointment .title p{
+    color:#c8ced8;
+}
+
+.form{
+    max-width:850px;
+    margin:auto;
+    background:white;
+    color:#182235;
+    padding:35px;
+    border-radius:15px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.group{
+    margin-bottom:17px;
+}
+
+.full{
+    grid-column:1/-1;
+}
+
+label{
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #d0d5dd;
+    border-radius:7px;
+    outline:none;
+    font-size:15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#b18b20;
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.note{
+    color:#687385;
+    font-size:12px;
+    margin:12px 0 18px;
+}
+
+/* CONTACT */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.contact-card{
+    background:white;
+    border:1px solid #e4e6e9;
+    padding:30px 20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.contact-icon{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.contact-card p{
+    color:#687385;
+    margin:7px 0 20px;
+    font-size:14px;
+}
+
+/* FAQ */
+
+.faq{
+    background:white;
+}
+
+.faq-container{
+    max-width:850px;
+    margin:auto;
+}
+
+details{
+    background:#f7f5ef;
+    padding:19px;
+    border-radius:8px;
+    margin-bottom:12px;
+}
+
+summary{
+    font-weight:bold;
+    cursor:pointer;
+}
+
+details p{
+    color:#687385;
+    margin-top:10px;
+}
+
+/* DISCLAIMER */
+
+.legal{
+    background:#ece8de;
+}
+
+.legal-box{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    color:#687385;
+    font-size:14px;
+}
+
+.legal-box h3{
+    color:#182235;
+    margin-bottom:8px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#080f1c;
+    color:#bfc6d1;
+    text-align:center;
+    padding:45px 0 90px;
+}
+
+footer h3{
+    color:white;
+    font-size:23px;
+}
+
+.footer-links{
+    margin:20px 0;
+}
+
+.footer-links a{
+    margin:0 9px;
+    color:#d4af37;
+    font-size:13px;
+}
+
+/* MOBILE BAR */
+
+.mobile-bar{
+    display:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px){
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:72px;
+        left:0;
+        width:100%;
+        background:#0d1626;
+        flex-direction:column;
+        padding:20px;
+        gap:17px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .full{
+        grid-column:auto;
+    }
+
+    .mobile-bar{
+        position:fixed;
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:2000;
+        background:#0d1626;
+        box-shadow:0 -5px 20px rgba(0,0,0,.25);
+    }
+
+    .mobile-bar a{
+        text-align:center;
+        color:white;
+        padding:11px 4px;
+        font-size:12px;
+        border-right:1px solid #30394a;
+    }
+
+    .mobile-bar a:last-child{
+        background:#d4af37;
+        color:#101827;
+    }
+}
+
+@media(max-width:500px){
+
+    section{
+        padding:60px 0;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .photo-area{
+        height:350px;
+    }
+
+    .form{
+        padding:22px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .buttons .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .board-info h2{
+        font-size:29px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+<div class="container navbar">
+
+    <div class="logo">
+        Pawan <span>Mishra</span>
+    </div>
+
+    <div class="menu" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#appointment" onclick="closeMenu()">Appointment</a></li>
+        <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="hero-tag">
+⚖️ ADVOCATE • DISTRICT & SESSIONS COURT
+</div>
+
+<h1>
+Pawan <span>Mishra</span>
+</h1>
+
+<p>
+Professional legal consultation and appointment services
+in Padrauna, Kushinagar, Uttar Pradesh.
+</p>
+
+<div class="buttons">
+
+<a href="#appointment" class="btn gold">
+📅 Book Appointment
+</a>
+
+<a href="tel:8840004115" class="btn white">
+📞 Call Now
+</a>
+
+<a
+href="https://wa.me/918840004115?text=Hello%20Advocate%20Pawan%20Mishra,%20I%20would%20like%20to%20contact%20you."
+target="_blank"
+class="btn white">
+💬 WhatsApp
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="title">
+<small>About Advocate</small>
+<h2>Meet Advocate Pawan Mishra</h2>
+<p>
+Professional legal consultation and client communication.
+</p>
+</div>
+
+
+<div class="about-grid">
+
+
+<!-- PROFILE BOARD -->
+
+<div class="advocate-board">
+
+<div class="board-header">
+<span>⚖</span>
+<span>ADVOCATE</span>
+<span>⚖</span>
+</div>
+
+
+<div class="photo-area">
+
+<!--
+PHOTO AREA
+
+ABHI NO PROFILE PHOTO DIKH RAHA HAI.
+
+BAAD ME PHOTO LAGANE KE LIYE:
+1. Photo ko "pawan-mishra.jpg" naam do.
+2. Neeche diye JavaScript me PHOTO_FILE_NAME change karo.
+-->
+
+<div class="no-photo" id="noPhoto">
+
+<div class="camera">
+📷
+</div>
+
+<strong>NO PROFILE PHOTO</strong>
+
+<small>
+Professional photo will be added here
+</small>
+
+</div>
+
+<img
+id="advocatePhoto"
+class="advocate-photo"
+src=""
+alt="Advocate Pawan Mishra">
+
+</div>
+
+
+<div class="board-info">
+
+<h2>Pawan Mishra</h2>
+
+<div class="profession">
+ADVOCATE
+</div>
+
+<div class="court">
+District & Sessions Court, Kushinagar
+</div>
+
+<div class="location">
+📍 Padrauna, Kushinagar, Uttar Pradesh
+</div>
+
+</div>
+
+
+<div class="board-footer">
+PROFESSIONAL LEGAL CONSULTATION
+</div>
+
+</div>
+
+
+<!-- ABOUT TEXT -->
+
+<div class="about-text">
+
+<h3>
+Legal Consultation & Assistance
+</h3>
+
+<p>
+Advocate Pawan Mishra is associated with the
+District & Sessions Court, Kushinagar.
+Visitors can use this website to request an appointment
+or make a general enquiry.
+</p>
+
+<ul class="info">
+
+<li>
+⚖️ <strong>Profession:</strong> Advocate
+</li>
+
+<li>
+🏛️ <strong>Court:</strong> District & Sessions Court, Kushinagar
+</li>
+
+<li>
+📍 <strong>Location:</strong> Padrauna, Kushinagar, Uttar Pradesh
+</li>
+
+<li>
+📞 <strong>Phone:</strong> 8840004115
+</li>
+
+<li>
+✉️ <strong>Email:</strong> pavan.mishra1997@gmail.com
+</li>
+
+</ul>
+
+<br>
+
+<a href="#appointment" class="btn gold">
+Book Consultation
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="title">
+
+<small>Legal Services</small>
+
+<h2>Areas of Assistance</h2>
+
+<p>
+Select the relevant category while requesting an appointment.
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+<div class="card">
+<div class="card-icon">⚖️</div>
+<h3>Civil Matters</h3>
+<p>
+General consultation regarding civil legal matters.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🏛️</div>
+<h3>Criminal Matters</h3>
+<p>
+General consultation regarding criminal legal matters.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">👨‍👩‍👧</div>
+<h3>Family Matters</h3>
+<p>
+General consultation regarding family-related matters.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🏠</div>
+<h3>Property Matters</h3>
+<p>
+General consultation regarding property-related matters.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📄</div>
+<h3>Documentation</h3>
+<p>
+Consultation regarding general legal documentation.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">💼</div>
+<h3>Legal Consultation</h3>
+<p>
+Request an appointment to discuss your legal concern.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- APPOINTMENT -->
+
+<section class="appointment" id="appointment">
+
+<div class="container">
+
+<div class="title">
+
+<small>Appointment</small>
+
+<h2>Book an Appointment</h2>
+
+<p>
+Fill the form and send your appointment request through WhatsApp.
+</p>
+
+</div>
+
+
+<div class="form">
+
+<form id="appointmentForm">
+
+<div class="form-grid">
+
+
+<div class="group">
+
+<label>Full Name *</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>Mobile Number *</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="10-digit mobile number"
+maxlength="10"
+pattern="[0-9]{10}"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>Email</label>
+
+<input
+type="email"
+id="email"
+placeholder="example@email.com">
+
+</div>
+
+
+<div class="group">
+
+<label>Preferred Date *</label>
+
+<input
+type="date"
+id="date"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>Preferred Time *</label>
+
+<input
+type="time"
+id="time"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>Service *</label>
+
+<select id="service" required>
+
+<option value="">
+Select service
+</option>
+
+<option>Civil Matters</option>
+<option>Criminal Matters</option>
+<option>Family Matters</option>
+<option>Property Matters</option>
+<option>Documentation</option>
+<option>Legal Consultation</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="group full">
+
+<label>
+Briefly describe your requirement
+</label>
+
+<textarea
+id="message"
+placeholder="Do not enter confidential or highly sensitive information."></textarea>
+
+</div>
+
+</div>
+
+
+<div class="note">
+
+⚠️ Please do not submit confidential case documents,
+passwords, financial information or highly sensitive
+personal information through this form.
+
+</div>
+
+
+<button type="submit" class="btn gold" style="width:100%;">
+📅 Send Appointment Request on WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="title">
+
+<small>Contact</small>
+
+<h2>Get in Touch</h2>
+
+<p>
+Choose your preferred method of contact.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<div class="contact-icon">📞</div>
+
+<h3>Call</h3>
+
+<p>
+8840004115
+</p>
+
+<a
+href="tel:8840004115"
+class="btn gold">
+Call Now
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="contact-icon">💬</div>
+
+<h3>WhatsApp</h3>
+
+<p>
+Send a direct enquiry.
+</p>
+
+<a
+href="https://wa.me/918840004115?text=Hello%20Advocate%20Pawan%20Mishra,%20I%20would%20like%20to%20make%20an%20enquiry."
+target="_blank"
+class="btn gold">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="contact-icon">✉️</div>
+
+<h3>Email</h3>
+
+<p>
+pavan.mishra1997@gmail.com
+</p>
+
+<a
+href="mailto:pavan.mishra1997@gmail.com"
+class="btn gold">
+Email
+</a>
+
+</div>
+
+</div>
+
+
+<div style="text-align:center;margin-top:30px;">
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Padrauna%2C%20Kushinagar%2C%20Uttar%20Pradesh"
+target="_blank"
+class="btn gold">
+📍 Get Directions
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq" id="faq">
+
+<div class="container">
+
+<div class="title">
+
+<small>FAQ</small>
+
+<h2>Frequently Asked Questions</h2>
+
+</div>
+
+
+<div class="faq-container">
+
+<details>
+
+<summary>
+How can I book an appointment?
+</summary>
+
+<p>
+Fill the appointment form and send the generated request
+through WhatsApp.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can I call directly?
+</summary>
+
+<p>
+Yes. You can use the Call Now button to contact
+8840004115.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can I contact through WhatsApp?
+</summary>
+
+<p>
+Yes. The WhatsApp button opens a direct conversation.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Where is the advocate located?
+</summary>
+
+<p>
+Padrauna, Kushinagar, Uttar Pradesh.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Does an enquiry automatically create an advocate-client relationship?
+</summary>
+
+<p>
+No. Submitting an enquiry or appointment request through
+the website does not automatically establish an
+advocate-client relationship.
+</p>
+
+</details>
+
+</div>
+</div>
+</section>
+
+
+<!-- LEGAL -->
+
+<section class="legal">
+
+<div class="container">
+
+<div class="legal-box">
+
+<h3>Legal Disclaimer</h3>
+
+<p>
+The information provided on this website is for general
+informational purposes only and should not be treated as
+legal advice. Contacting the advocate through this website
+does not automatically establish an advocate-client
+relationship. Legal matters depend on their individual facts
+and circumstances.
+</p>
+
+<br>
+
+<h3>Privacy Notice</h3>
+
+<p>
+Information entered into the appointment form is used to
+prepare an appointment enquiry for communication with the
+advocate. Visitors should avoid submitting confidential
+documents or unnecessary sensitive information through the
+public form.
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<h3>Pawan Mishra</h3>
+
+<p>
+Advocate | District & Sessions Court, Kushinagar
+</p>
+
+<p>
+Padrauna, Kushinagar, Uttar Pradesh
+</p>
+
+<div class="footer-links">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#appointment">Appointment</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+<p>
+© <span id="year"></span> Pawan Mishra. All rights reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- MOBILE BOTTOM BAR -->
+
+<div class="mobile-bar">
+
+<a href="tel:8840004115">
+📞<br>Call
+</a>
+
+<a
+href="https://wa.me/918840004115?text=Hello%20Advocate%20Pawan%20Mishra,%20I%20would%20like%20to%20contact%20you."
+target="_blank">
+💬<br>WhatsApp
+</a>
+
+<a href="#appointment">
+📅<br>Appointment
+</a>
+
+</div>
+
+
+<script>
+
+/* ==========================
+   MOBILE MENU
+========================== */
+
+function toggleMenu(){
+
+    document
+    .getElementById("navLinks")
+    .classList.toggle("active");
+
+}
+
+function closeMenu(){
+
+    document
+    .getElementById("navLinks")
+    .classList.remove("active");
+
+}
+
+
+/* ==========================
+   CURRENT YEAR
+========================== */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+/* ==========================
+   MINIMUM APPOINTMENT DATE
+========================== */
+
+const dateInput =
+document.getElementById("date");
+
+const today =
+new Date().toISOString().split("T")[0];
+
+dateInput.min = today;
+
+
+/* ==========================
+   PROFILE PHOTO
+==========================
+
+   BAAD ME PHOTO LAGANE KE LIYE:
+
+   1. Advocate ki photo ko
+      "pawan-mishra.jpg" naam do.
+
+   2. Photo ko index.html ke
+      same folder me rakho.
+
+   3. Neeche PHOTO_FILE_NAME me
+      "pawan-mishra.jpg" likho.
+
+*/
+
+const PHOTO_FILE_NAME = "";
+
+
+/* PHOTO AVAILABLE HO TO SHOW KARO */
+
+if(PHOTO_FILE_NAME !== ""){
+
+    const photo =
+    document.getElementById("advocatePhoto");
+
+    const placeholder =
+    document.getElementById("noPhoto");
+
+    photo.src = PHOTO_FILE_NAME;
+
+    photo.style.display = "block";
+
+    placeholder.style.display = "none";
+}
+
+
+/* ==========================
+   APPOINTMENT FORM
+========================== */
+
+document
+.getElementById("appointmentForm")
+.addEventListener("submit",function(event){
+
+    event.preventDefault();
+
+
+    const name =
+    document.getElementById("name").value.trim();
+
+    const phone =
+    document.getElementById("phone").value.trim();
+
+    const email =
+    document.getElementById("email").value.trim();
+
+    const date =
+    document.getElementById("date").value;
+
+    const time =
+    document.getElementById("time").value;
+
+    const service =
+    document.getElementById("service").value;
+
+    const message =
+    document.getElementById("message").value.trim();
+
+
+    /* PHONE VALIDATION */
+
+    if(!/^[0-9]{10}$/.test(phone)){
+
+        alert(
+        "Please enter a valid 10-digit mobile number."
+        );
+
+        return;
+
+    }
+
+
+    /* WHATSAPP MESSAGE */
+
+    const whatsappMessage =
+
+`Hello Advocate Pawan Mishra,
+
+I would like to request an appointment.
+
+Name: ${name}
+
+Mobile: ${phone}
+
+Email: ${email || "Not provided"}
+
+Preferred Date: ${date}
+
+Preferred Time: ${time}
+
+Service: ${service}
+
+Requirement:
+${message || "Not provided"}
+
+Thank you.`;
+
+
+    const whatsappURL =
+
+    "https://wa.me/918840004115?text=" +
+    encodeURIComponent(whatsappMessage);
+
+
+    window.open(
+    whatsappURL,
+    "_blank"
+    );
+
+});
+
+</script>
+
+</body>
+</html>
